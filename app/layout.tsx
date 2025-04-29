@@ -12,8 +12,8 @@ const baseURL = 'https://mattphillips.space'
 export const metadata: Metadata = {
   metadataBase: new URL(baseURL),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Portfolio',
+    template: '%s | Matt',
   },
   description: 'This is my portfolio.',
   openGraph: {

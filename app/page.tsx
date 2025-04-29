@@ -43,7 +43,9 @@ const Buttons = () => {
           />
         </a>
         <a className='px-10 py-3 border border-gray-500 flex items-center gap-2'
-          href="/resume.pdf"
+          href="/matthew_phillips_resume.pdf"
+          target='_blank'
+          rel="noopener noreferrer"
           download
         >
           my resume

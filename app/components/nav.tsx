@@ -4,12 +4,6 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/blog': {
-    name: 'blog',
-  },
-  'https://github.com/mattphillips-one': {
-    name: 'github',
-  },
 }
 
 export function Navbar() {
