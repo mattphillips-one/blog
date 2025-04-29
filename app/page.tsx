@@ -1,4 +1,3 @@
-import { BlogPosts } from 'app/components/posts';
 import Image from 'next/image';
 import { assets } from 'assets/assets';
 import { cousine, roboto, source_code_pro, nunito_sans } from 'app/ui/fonts';
