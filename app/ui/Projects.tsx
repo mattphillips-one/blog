@@ -27,6 +27,7 @@ const projectItems: ProjectItemsType = {
   }
 };
 
+
 export default function Projects() {
   return (
     <section id='projects' className='border-t-1 border-stone-400 scroll'>
