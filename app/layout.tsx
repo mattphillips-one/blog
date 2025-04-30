@@ -50,7 +50,8 @@ export default function RootLayout({
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
-        GeistMono.variable
+        GeistMono.variable,
+        'scroll-smooth'
       )}
     >
       <body className="antialiased max-w-6xl mx-4 mt-8 lg:mx-auto">

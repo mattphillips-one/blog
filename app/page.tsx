@@ -1,5 +1,5 @@
 import Header from 'app/ui/Header';
-import { assets } from 'assets/assets';
+import Projects from 'app/ui/Projects';
 import { cousine, roboto, nunito_sans } from 'app/ui/fonts';
 
 export default function Page() {
@@ -8,12 +8,7 @@ export default function Page() {
       
       <Header />
 
-      <section className='border-t-1 border-stone-400'>
-        <h1 className={`${cousine.className} text-2xl font-normal text-stone-800 ml-10 mt-3 tracking-tight`}>
-          Projects
-        </h1>
-
-      </section>
+      <Projects />
     </section>
-  )
+  );
 }

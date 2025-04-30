@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { assets } from 'assets/assets';
-import { cousine, roboto, nunito_sans } from 'app/ui/fonts';
+import { cousine, roboto, nunito_sans, themes } from 'app/ui/fonts';
 
 export default function Header() {
   return (
@@ -19,7 +19,7 @@ export default function Header() {
 
         <HeaderButtons />
 
-        <p className={`${roboto.className} font-light mb-1 text-sm/6 text-center md:text-right`}>
+        <p className={`${themes.roboto_body} mb-1 text-center md:text-right md:text-base/6`}>
           {`I'm a full-stack software engineer with a passion for environmental protection and human rights. 
             Download my resume or view my projects below to see what I've been up to.`}
         </p>
