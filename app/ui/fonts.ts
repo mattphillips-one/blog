@@ -32,7 +32,7 @@ export const nunito_sans = Nunito_Sans({
 
 export const lato = Lato({
   subsets: ["latin"],
-  weight: ["300"]
+  weight: ["300", "400"]
 })
 
 export const themes = {

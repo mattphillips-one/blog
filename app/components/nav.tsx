@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { assets } from 'assets/assets';
 import { useRef } from 'react';
+import { lato, themes } from 'app/ui/fonts';
 
 const navItems = {
   '/': {
@@ -62,7 +63,7 @@ export function Navbar() {
 
 const SideMenu = ({ref, closeMenu}) => {
   return (
-    <ul className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-white/[.96] transition duration-500'
+    <div className='flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-white/[.96] transition duration-500'
       ref={ref}
     >
       
@@ -74,10 +75,11 @@ const SideMenu = ({ref, closeMenu}) => {
           alt=''
         />
       </div>
-      
-      <li><a className='' onClick={closeMenu} href="#top">Home</a></li>
-      <li><a className='' onClick={closeMenu} href="#about">About me</a></li>
-      <li><a className='' onClick={closeMenu} href="#projects">Projects</a></li>
-    </ul>
+      <ul className='flex flex-col gap-5 mt-10'>
+        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#top">Home</a></li>
+        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#about">About me</a></li>
+        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#projects">Projects</a></li>
+      </ul>
+    </div>
   );
 };
