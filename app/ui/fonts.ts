@@ -12,12 +12,12 @@ export const ovo = Ovo({
 
 export const roboto = Roboto_Mono({
   subsets: ["latin"],
-  weight: ["300"]
+  weight: ["300", "400"]
 });
 
 export const cousine = Cousine({
   subsets: ["latin"],
-  weight: ["400"]
+  weight: ["400", "700"]
 });
 
 export const source_code_pro = Source_Code_Pro({
