@@ -48,7 +48,7 @@ export function Navbar() {
           </div>
         </nav>
       </div>
-        <button className='w-5 md:hidden cursor-pointer'
+        <button className='w-6 md:hidden cursor-pointer'
           onClick={openSideMenu}
         >
           <Image
