@@ -35,16 +35,17 @@ const Buttons = () => {
   return (
     <>
       <div className='flex flex-row gap-4 mr-1 justify-center md:justify-end '>
-        <a className='px-10 py-3 border border-white bg-black text-white flex items-center gap-2'
+        <a className='border border-white bg-black text-white flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10 '
           href="#contact"
         >
           contact me
+          
           <Image className='w-4'
             src={assets.right_arrow}
             alt='right white arrow'
           />
         </a>
-        <a className='px-10 py-3 border border-gray-500 flex items-center gap-2'
+        <a className='border border-gray-500 flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10'
           href="/matthew_phillips_resume.pdf"
           target='_blank'
           rel="noopener noreferrer"
