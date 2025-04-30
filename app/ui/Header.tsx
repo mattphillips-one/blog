@@ -12,7 +12,7 @@ export default function Header() {
         />
       </div>
 
-      <div className='flex flex-col items-center mb-1 ml-9 gap-8 md:items-end md:justify-between'>
+      <div className='flex flex-col items-center mb-1 gap-8 md:ml-9 md:items-end md:justify-between'>
         <h1 className={`${nunito_sans.className} tracking-wide mt-1 text-3xl text-center md:text-right mr-1`}>
           MATTHEW PHILLIPS
         </h1>
