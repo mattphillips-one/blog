@@ -58,7 +58,7 @@ export function Navbar() {
             src={assets.menu_black}
             alt='menu icon'
           />
-          <Image className='hidden dark:visible'
+          <Image className='invisible dark:visible'
             src={assets.menu_white}
             alt='menu icon'
           />

@@ -32,7 +32,7 @@ const projectItems: ProjectItemsType = {
 export default function Projects() {
   return (
     <section id='projects' className={`${themes.sectionBorder}`}>
-      <h1 className={`${fonts.roboto} text-2xl font-normal text-stone-800 text-right mr-10 mt-3 mb-6 tracking-tight`}>
+      <h1 className={`${fonts.section_header}`}>
         Projects
       </h1>
 
@@ -47,7 +47,7 @@ export default function Projects() {
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <h1 className={`${fonts.lato} text-2xl font-extralight flex flex-row mr-1`}>
+                <h1 className={`${fonts.lato} text-2xl font-base flex flex-row mr-1`}>
                   {data.title}
                 </h1>
                 <div className='text-stone-600'><ArrowIcon /></div>
