@@ -50,7 +50,7 @@ const HeaderButtons = () => {
           download
         >
           my resume
-          <Image className='w-4'
+          <Image className='w-4 dark:invert'
             src={assets.download_icon}
             alt='download icon'
           />

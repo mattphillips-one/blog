@@ -50,7 +50,7 @@ export default function Projects() {
                 <h1 className={`${fonts.lato} text-2xl font-base flex flex-row mr-1`}>
                   {data.title}
                 </h1>
-                <div className='text-stone-600'><ArrowIcon /></div>
+                <div className='text-stone-600 dark:text-white'><ArrowIcon /></div>
               </a>
 
               <ul className={`${fonts.montserrat_body} py-2`}>

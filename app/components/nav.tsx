@@ -54,12 +54,8 @@ export function Navbar() {
         <button className='w-6 md:hidden cursor-pointer'
           onClick={openSideMenu}
         >
-          <Image className='dark:hidden'
+          <Image className='dark:invert'
             src={assets.menu_black}
-            alt='menu icon'
-          />
-          <Image className='invisible dark:visible'
-            src={assets.menu_white}
             alt='menu icon'
           />
         </button>
@@ -70,19 +66,19 @@ export function Navbar() {
 
 const SideMenu = ({ref, closeMenu}) => {
   return (
-    <div className='flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-white/[.96] transition duration-500'
+    <div className='flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-white/[.96] dark:bg-black/90 transition duration-500'
       ref={ref}
     >
       
       <div className='absolute right-6 top-7 cursor-pointer'
         onClick={closeMenu}
       >
-        <Image className='w-5'
+        <Image className='w-5 dark:invert'
           src={assets.close_black}
           alt=''
         />
       </div>
-      <ul className='flex flex-col gap-5 mt-10'>
+      <ul className={`flex flex-col gap-5 mt-10 ${fonts.montserrat}`}>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#top">Home</a></li>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#about">About</a></li>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#projects">Projects</a></li>
