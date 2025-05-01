@@ -1,4 +1,5 @@
 import { fonts } from 'app/ui/fonts';
+import { themes } from 'app/ui/themes';
 import { ProjectItemsType } from 'app/types/types';
 import ArrowIcon from 'app/components/arrow-icon';
 
@@ -30,7 +31,7 @@ const projectItems: ProjectItemsType = {
 
 export default function Projects() {
   return (
-    <section id='projects' className='border-t-1 border-stone-400 scroll'>
+    <section id='projects' className={`${themes.sectionBorder}`}>
       <h1 className={`${fonts.roboto} text-2xl font-normal text-stone-800 text-right mr-10 mt-3 mb-6 tracking-tight`}>
         Projects
       </h1>
@@ -64,7 +65,7 @@ export default function Projects() {
                   )
                 })}
               </ul>
-              <p className={`${fonts.roboto_body} text-stone-900 ml-5`}>
+              <p className={`${fonts.roboto_body} text-stone-900 dark:text-stone-50 ml-5`}>
                 {data.tech}
               </p>
             </div>

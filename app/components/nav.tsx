@@ -54,8 +54,12 @@ export function Navbar() {
         <button className='w-6 md:hidden cursor-pointer'
           onClick={openSideMenu}
         >
-          <Image
+          <Image className='dark:hidden'
             src={assets.menu_black}
+            alt='menu icon'
+          />
+          <Image className='hidden dark:visible'
+            src={assets.menu_white}
             alt='menu icon'
           />
         </button>
