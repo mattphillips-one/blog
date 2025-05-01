@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { assets } from 'assets/assets';
 import { useRef } from 'react';
-import { lato, themes } from 'app/ui/fonts';
+import { fonts } from 'app/ui/fonts';
 
 const navItems = {
   '/': {
@@ -12,6 +12,9 @@ const navItems = {
   },
   '/#projects': {
     name: 'projects'
+  },
+  '#contact': {
+    name: 'contact'
   }
 }
 
@@ -39,7 +42,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="transition-all hover:underline hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}
                 </Link>
@@ -77,8 +80,9 @@ const SideMenu = ({ref, closeMenu}) => {
       </div>
       <ul className='flex flex-col gap-5 mt-10'>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#top">Home</a></li>
-        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#about">About me</a></li>
+        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#about">About</a></li>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#projects">Projects</a></li>
+        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#contact">Contact</a></li>
       </ul>
     </div>
   );

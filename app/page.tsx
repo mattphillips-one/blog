@@ -1,5 +1,6 @@
 import Header from 'app/ui/Header';
 import Projects from 'app/ui/Projects';
+import Contact from 'app/ui/Contact';
 import { cousine, roboto, nunito_sans } from 'app/ui/fonts';
 
 export default function Page() {
@@ -9,6 +10,8 @@ export default function Page() {
       <Header />
 
       <Projects />
+
+      <Contact />
     </section>
   );
 }

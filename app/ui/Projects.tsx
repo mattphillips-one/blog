@@ -1,4 +1,4 @@
-import { cousine, lato, outfit, ovo, roboto, themes } from 'app/ui/fonts';
+import { fonts } from 'app/ui/fonts';
 import { ProjectItemsType } from 'app/types/types';
 import ArrowIcon from 'app/components/arrow-icon';
 
@@ -31,7 +31,7 @@ const projectItems: ProjectItemsType = {
 export default function Projects() {
   return (
     <section id='projects' className='border-t-1 border-stone-400 scroll'>
-      <h1 className={`${roboto.className} text-2xl font-normal text-stone-800 text-right mr-10 mt-3 mb-6 tracking-tight`}>
+      <h1 className={`${fonts.roboto} text-2xl font-normal text-stone-800 text-right mr-10 mt-3 mb-6 tracking-tight`}>
         Projects
       </h1>
 
@@ -46,11 +46,13 @@ export default function Projects() {
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <h1 className={`${lato.className} text-2xl font-extralight flex flex-row mr-1`}>{data.title}</h1>
-                
+                <h1 className={`${fonts.lato} text-2xl font-extralight flex flex-row mr-1`}>
+                  {data.title}
+                </h1>
                 <div className='text-stone-600'><ArrowIcon /></div>
               </a>
-              <ul className={`${themes.lato_body} py-2 tracking-wide`}>
+
+              <ul className={`${fonts.montserrat_body} py-2`}>
                 {data.desc.map((line, i) => {
                   return(
                     <li key={i} className='flex flex-row px-2'>
@@ -62,7 +64,7 @@ export default function Projects() {
                   )
                 })}
               </ul>
-              <p className={`${themes.roboto_body} text-stone-900 ml-5`}>
+              <p className={`${fonts.roboto_body} text-stone-900 ml-5`}>
                 {data.tech}
               </p>
             </div>
