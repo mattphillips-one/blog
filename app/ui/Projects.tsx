@@ -4,6 +4,18 @@ import { ProjectItemsType } from 'app/types/types';
 import ArrowIcon from 'app/components/arrow-icon';
 
 const projectItems: ProjectItemsType = {
+  "behr-news": {
+    title: "BEHR News",
+    desc: [
+      `Business Environment Human Rights News is an in-beta news platform that compiles
+      multi-source journalism and reporting on the nexus of business, environment, and
+      human rights`,
+      `Utilizes a custom search engine and web scraping to fetch relevant articles`,
+    ],
+    tech: "Typescript, Next.js",
+    link: "https://behr-news-app.vercel.app"
+  },
+
   "codescanner": {
     title: "CodeScanner",
     desc: [
@@ -11,20 +23,20 @@ const projectItems: ProjectItemsType = {
       information about the corporation that produces it, emphasizing corporate
       transparency and highlighting environmental and human rights abuses.`
     ],
-    tech: 'Typescript, React Native, Expo Router',
-    link: 'https://github.com/mattphillips-one/codescanner'
+    tech: "Typescript, React Native, Expo Router",
+    link: "https://github.com/mattphillips-one/codescanner"
   },
 
   "noteClassifier": {
-    title: 'Clinical Note Classifier',
+    title: "Clinical Note Classifier",
     desc: [`Worked with a team of three others to analyze the effectiveness of multiple 
             transformer-based natural language models to categorize unstructured clinical
             patient notes by specialization`,
             `Fine-tuned pre-trained BERT, BioBERT, RoBERTa, ELECTRA transformer models and an ensemble method
             and used multiple techniques to clean, process, and augment unstructured, natural language clinical patient notes`
           ],
-    tech: 'Python, PyTorch',
-    link: '/clinical_note_classification.pdf'
+    tech: "Python, PyTorch",
+    link: "/clinical_note_classification.pdf"
   }
 };
 

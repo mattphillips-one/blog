@@ -39,6 +39,7 @@ export default function Contact() {
         Contact
       </h1>
 
+      {/* This displays for mobile view */}
       <div className='flex flex-col mx-[5%] md:hidden gap-5'>
         <h2 className={`${fonts.roboto} font-normal text-2xl`}>Get in touch!</h2>
         <p className={`${fonts.montserrat}`}>You can also email me at <span className={`${fonts.roboto} font-light inline-block hover:underline`}>mattphillips142@gmail.com</span>.</p>
@@ -65,6 +66,7 @@ export default function Contact() {
           </div>
         </form>
 
+        {/* This displays for web view */}
         <div className='hidden md:flex flex-col items-end gap-4 mr-10 w-1/4'>
           <h2 className={`${fonts.roboto} font-normal text-2xl`}>Get in touch!</h2>
           <p className={`${fonts.montserrat} text-right`}>You can also email me at <span className={`${fonts.roboto} font-light inline-block hover:underline`}>mattphillips142@gmail.com</span>.</p>
