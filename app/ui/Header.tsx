@@ -5,7 +5,7 @@ import { cousine, roboto, nunito_sans, fonts } from 'app/ui/fonts';
 export default function Header() {
   return (
     <section className='flex flex-col items-center md:flex-row md:items-stretch'>
-      <div className='flex max-w-sm mb-10 md:max-w-xl md:mb-0'>
+      <div className='flex max-w-sm mb-10 md:max-w-md lg:max-w-lg xl:max-w-xl md:mb-0'>
         <Image className='h-full'
           src={assets.profile_pic}
           alt='Picture of me'

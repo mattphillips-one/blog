@@ -33,7 +33,7 @@ export function Navbar() {
     <aside className="-ml-[8px] mb-16 tracking-tight flex justify-between">
       <div className="px-2 lg:sticky lg:top-20">
         <nav
-          className="flex flex-row items-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row items-baseline relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
           <div className="hidden md:flex flex-row space-x-0 pr-10">
@@ -51,14 +51,15 @@ export function Navbar() {
           </div>
         </nav>
       </div>
-        <button className='w-6 md:hidden cursor-pointer'
-          onClick={openSideMenu}
-        >
-          <Image className='dark:invert'
-            src={assets.menu_black}
-            alt='menu icon'
-          />
-        </button>
+
+      <button className='w-6 md:hidden cursor-pointer'
+        onClick={openSideMenu}
+      >
+        <Image className='dark:invert'
+          src={assets.menu_black}
+          alt='menu icon'
+        />
+      </button>
       <SideMenu ref={sideMenuRef} closeMenu={closeSideMenu}/>
     </aside>
   )
