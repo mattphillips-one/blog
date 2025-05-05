@@ -81,7 +81,6 @@ const SideMenu = ({ref, closeMenu}) => {
       </div>
       <ul className={`flex flex-col gap-5 mt-10 ${fonts.montserrat}`}>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#top">Home</a></li>
-        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#about">About</a></li>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#projects">Projects</a></li>
         <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#contact">Contact</a></li>
       </ul>

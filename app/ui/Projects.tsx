@@ -48,7 +48,7 @@ export default function Projects() {
         Projects
       </h1>
 
-      <div className='px-8'>
+      <div className='px-1 lg:px-8'>
         {Object.entries(projectItems).map(([key, data]) => {
           return (
             <div className='flex flex-col py-4'
@@ -70,7 +70,7 @@ export default function Projects() {
                   return(
                     <li key={i} className='flex flex-row px-2'>
                       -
-                      <p className='text-left ml-1'>
+                      <p className='text-left md:text-justify ml-1'>
                         {line}
                       </p>
                     </li>
