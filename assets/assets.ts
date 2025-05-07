@@ -1,5 +1,5 @@
 import download_icon from './download-icon.png';
-import profile_pic from './profile-pic-2.jpg';
+import profile_pic from './000024.jpg';
 import right_arrow from './right-arrow-white.png';
 import menu_black from './menu-black.png';
 import close_black from './close-black.png'

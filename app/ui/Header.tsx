@@ -31,31 +31,29 @@ export default function Header() {
 // "contact me" and "my resume" buttons
 const HeaderButtons = () => {
   return (
-    <>
-      <div className='flex flex-row gap-4 mr-1 justify-center md:justify-end '>
-        <a className='border border-white dark:border-stone-300 bg-black text-white flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10 hover:shadow-md shadow-stone-100/10'
-          href="#contact"
-        >
-          contact me
-          
-          <Image className='w-4'
-            src={assets.right_arrow}
-            alt='right white arrow'
-          />
-        </a>
-        <a className='border border-stone-500 dark:border-stone-300 flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10 hover:shadow-md shadow-stone-100/10'
-          href="/matthew-phillips-resume.pdf"
-          target='_blank'
-          rel="noopener noreferrer"
-          download
-        >
-          my resume
-          <Image className='w-4 dark:invert'
-            src={assets.download_icon}
-            alt='download icon'
-          />
-        </a>
-      </div>
-    </>
+    <div className='flex flex-row gap-4 mr-1 justify-center md:justify-end '>
+      <a className='border border-white dark:border-stone-300 bg-black text-white flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10 hover:shadow-md shadow-stone-100/10 active:invert'
+        href="#contact"
+      >
+        contact me
+        
+        <Image className='w-4'
+          src={assets.right_arrow}
+          alt='right white arrow'
+        />
+      </a>
+      <a className='border border-stone-500 dark:border-stone-300 bg-white dark:bg-black dark:text-white flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10 hover:shadow-md shadow-stone-100/10 active:invert'
+        href="/matthew-phillips-resume.pdf"
+        target='_blank'
+        rel="noopener noreferrer"
+        download
+      >
+        my resume
+        <Image className='w-4 dark:invert'
+          src={assets.download_icon}
+          alt='download icon'
+        />
+      </a>
+    </div>
   )
 }

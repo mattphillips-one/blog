@@ -55,7 +55,7 @@ export default function Contact() {
 
           <div className='flex flex-row gap-6 items-center ml-2'>
             <button type='submit'
-            className='border border-white dark:border-stone-300 bg-black text-white flex items-center gap-2 py-3 px-4 lg:px-10 hover:shadow-md shadow-stone-100/10 cursor-pointer'>
+            className='border border-white dark:border-stone-300 bg-black text-white flex items-center gap-2 py-3 px-4 lg:px-10 hover:shadow-md shadow-stone-100/10 cursor-pointer active:invert'>
               Submit
               <Image className='w-4'
                 src={assets.right_arrow}
