@@ -44,7 +44,7 @@ const HeaderButtons = () => {
           />
         </a>
         <a className='border border-stone-500 dark:border-stone-300 flex items-center gap-2 py-3 px-3 md:px-4 lg:px-10 hover:shadow-md shadow-stone-100/10'
-          href="/matthew_phillips_resume.pdf"
+          href="/matthew-phillips-resume.pdf"
           target='_blank'
           rel="noopener noreferrer"
           download
