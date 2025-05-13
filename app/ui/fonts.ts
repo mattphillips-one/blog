@@ -1,4 +1,19 @@
-import { Outfit, Ovo, Roboto_Mono, Cousine, Nunito_Sans, Lato, Space_Mono, Montserrat, Lora } from 'next/font/google';
+import {
+    Outfit,
+    Ovo,
+    Roboto_Mono,
+    Cousine,
+    Nunito_Sans,
+    Lato,
+    Space_Mono,
+    Montserrat,
+    Lora,
+    Cutive_Mono,
+    Source_Code_Pro,
+    Radley,
+    Castoro,
+    Lusitana,
+} from 'next/font/google';
 
 export const outfit = Outfit({
   subsets: ["latin"],
@@ -43,6 +58,31 @@ export const montserrat = Montserrat({
 export const lora = Lora({
   subsets: ["latin"],
   weight: ["400"]
+});
+
+export const cutive_mono = Cutive_Mono({
+    subsets: ["latin"],
+    weight: ['400']
+});
+
+export const source_code_pro = Source_Code_Pro({
+    subsets: ["latin"],
+    weight: ["300"]
+});
+
+export const radley = Radley({
+    subsets: ["latin"],
+    weight: ["400"]
+});
+
+export const castoro = Castoro({
+    subsets: ["latin"],
+    weight: ["400"]
+});
+
+const lusitana = Lusitana({
+    subsets: ["latin"],
+    weight: ["400"]
 })
 
 export const fonts = {
@@ -55,8 +95,13 @@ export const fonts = {
   space_mono: space_mono.className,
   montserrat: montserrat.className,
   lora: lora.className,
+  cutive_mono: cutive_mono.className,
+  source_code_pro: source_code_pro.className,
+  radley: radley.className,
+  castoro: castoro.className,
+  lusitana: lusitana.className,
   montserrat_body: `${montserrat.className} font-light text-base/7 tracking-wide`,
   roboto_body: `${roboto.className} font-light text-sm/6`,
   lato_body: `${lato.className} font-light text-lg`,
-  section_header: `${roboto.className} text-2xl font-normal text-stone-800 dark:text-stone-50 text-right mr-6 md:mr-10 mt-3 mb-6 tracking-tight`
+  section_header: `${roboto.className} text-2xl font-base dark:text-stone-50 text-right mr-6 md:mr-10 mt-3 mb-6 tracking-tight`
 }

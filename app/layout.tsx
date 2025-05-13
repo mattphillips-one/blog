@@ -54,8 +54,8 @@ export default function RootLayout({
         'scroll-smooth'
       )}
     >
-      <body className="antialiased max-w-6xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto justify-start min-w-0 mt-6 flex flex-col px-2">
+      <body className="antialiased">
+        <main className="flex-auto justify-start min-w-0 mt-6 flex flex-col px-2 max-w-6xl mx-4 mt-8 lg:mx-auto">
           <Navbar />
           {children}
           <Footer />

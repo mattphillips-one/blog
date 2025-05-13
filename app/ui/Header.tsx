@@ -5,7 +5,7 @@ import { cousine, roboto, nunito_sans, fonts } from 'app/ui/fonts';
 export default function Header() {
   return (
     <section className='flex flex-col items-center md:flex-row md:items-stretch'>
-      <div className='flex max-w-sm mb-10 md:max-w-md lg:max-w-lg xl:max-w-xl md:mb-0'>
+      <div className='flex max-w-xs mb-10 md:max-w-sm lg:max-w-md xl:max-w-lg md:mb-0'>
         <Image className='h-full'
           src={assets.profile_pic}
           alt='Picture of me'
@@ -19,7 +19,7 @@ export default function Header() {
 
         <HeaderButtons />
 
-        <p className={`${fonts.roboto_body} mb-1 text-center md:text-right md:text-base/6`}>
+        <p className={`${fonts.source_code_pro} mb-1 text-center md:text-right md:text-base/6`}>
           {`I'm a full-stack software engineer with a passion for environmental protection and human rights. 
             Download my resume or view my projects below to see what I've been up to.`}
         </p>

@@ -48,18 +48,18 @@ export default function Projects() {
         Projects
       </h1>
 
-      <div className='px-1 lg:px-8'>
+      <div className='px-1 lg:px-20'>
         {Object.entries(projectItems).map(([key, data]) => {
           return (
             <div className='flex flex-col py-4'
               key={key}
             >
-              <a className='flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100'
+              <a className='flex items-center transition-all hover:text-slate-600 dark:hover:text-neutral-100'
                 href={data.link}
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <h1 className={`${fonts.lato} text-2xl font-base flex flex-row mr-1`}>
+                <h1 className={`${fonts.lato} font-light tracking-wide text-2xl font-base flex flex-row mr-1`}>
                   {data.title}
                 </h1>
                 <div className='text-stone-600 dark:text-white'><ArrowIcon /></div>
