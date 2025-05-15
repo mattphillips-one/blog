@@ -1,5 +1,5 @@
-import { fonts } from 'app/ui/fonts';
-import { themes } from 'app/ui/themes';
+import { fonts } from 'app/components/fonts';
+import { themes } from 'app/components/themes';
 import { ProjectItemsType } from 'app/types/types';
 import ArrowIcon from 'app/components/arrow-icon';
 

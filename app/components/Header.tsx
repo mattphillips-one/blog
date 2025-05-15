@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { assets } from 'assets/assets';
-import { cousine, roboto, nunito_sans, fonts } from 'app/ui/fonts';
+import { cousine, roboto, nunito_sans, fonts } from 'app/components/fonts';
 
 export default function Header() {
   return (
