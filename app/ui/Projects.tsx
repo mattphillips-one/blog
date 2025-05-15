@@ -13,7 +13,7 @@ const projectItems: ProjectItemsType = {
       `Utilizes a custom search engine and web scraping to fetch relevant articles`,
     ],
     tech: "Typescript, Next.js",
-    link: "https://behr-news-app.vercel.app"
+    link: "https://www.behr.news"
   },
 
   "codescanner": {
