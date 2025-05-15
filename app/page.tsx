@@ -1,7 +1,7 @@
 import Header from 'app/components/Header';
 import Projects from 'app/components/Projects';
 import Contact from 'app/components/Contact';
-import { cousine, roboto, nunito_sans } from 'app/components/fonts';
+import { cousine, roboto, nunito_sans } from 'app/components/ui/fonts';
 
 export default function Page() {
   return (

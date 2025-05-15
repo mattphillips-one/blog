@@ -1,7 +1,7 @@
 'use client';
 
-import { fonts } from 'app/components/fonts';
-import { themes } from 'app/components/themes';
+import { fonts } from 'app/components/ui/fonts';
+import { themes } from 'app/components/ui/themes';
 import { useState } from 'react';
 import Image from 'next/image';
 import { assets } from 'assets/assets';

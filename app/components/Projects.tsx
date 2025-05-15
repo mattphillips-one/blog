@@ -1,7 +1,7 @@
-import { fonts } from 'app/components/fonts';
-import { themes } from 'app/components/themes';
+import { fonts } from 'app/components/ui/fonts';
+import { themes } from 'app/components/ui/themes';
 import { ProjectItemsType } from 'app/types/types';
-import ArrowIcon from 'app/components/arrow-icon';
+import ArrowIcon from 'app/components/ui/arrow-icon';
 
 const projectItems: ProjectItemsType = {
   "behr-news": {

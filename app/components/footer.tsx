@@ -1,4 +1,4 @@
-import ArrowIcon from "app/components/arrow-icon"
+import ArrowIcon from "app/components/ui/arrow-icon"
 
 const links = {
   "github": "https://github.com/mattphillips-one",

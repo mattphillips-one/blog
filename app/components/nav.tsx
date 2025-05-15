@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { assets } from 'assets/assets';
 import { useRef } from 'react';
-import { fonts } from 'app/components/fonts';
+import { fonts } from 'app/components/ui/fonts';
 
 const navItems = {
   '/': {

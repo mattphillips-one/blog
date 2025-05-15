@@ -1,4 +1,4 @@
-import { fonts } from 'app/components/fonts';
+import { fonts } from 'app/components/ui/fonts';
 
 export const themes = {
   formBox: `outline-none border-[0.5px] border-stone-500 rounded-sm hover:inset-shadow-sm/50
