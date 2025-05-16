@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { baseUrl } from 'app/sitemap';
 
 type Metadata = {
     title: string,
@@ -24,7 +25,7 @@ function parseMDX(fileContents: string) {
 }
 
 export function getBlogPosts() {
-    const path = 'app/blog/posts'
+    const path = `${process.cwd()}/app/blog/posts`
     
     let posts = fs.readdirSync(path).map((file) => {
         let rawContent = fs.readFileSync(`${path}/${file}`).toString();
