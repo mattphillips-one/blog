@@ -1,4 +1,5 @@
-import MarkdownView from "react-showdown";
+import Markdown from "react-markdown";
+import remarkGfm from 'remark-gfm';
 import { getBlogPosts } from "../util";
 import ArrowLeft from "app/components/ui/arrow-left";
 import { fonts } from "app/components/ui/fonts";
@@ -10,21 +11,27 @@ export default async function BlogPostPage({ params }: { params: Promise<{slug:s
   const post = getBlogPosts().find((post) => post.metadata.slug === slug);
 
   if (!post) {
-    notFound();
+    notFound(); // displays default 404 - not found in layout
   }
 
   return (
-    <section>
-      <nav className='flex flex-row-reverse justify-end mb-4 text-neutral-600 dark:text-neutral-300'>
-        <Link href='/blog' className={`${fonts.roboto} font-light pl-2 block peer`}>back</Link>
-        <div className='transition peer-hover:-translate-x-1 duration-400'>
-          <ArrowLeft/>
-        </div>
+    <section className='lg: px-9'>
+      <nav className='mb-4 text-neutral-600 dark:text-neutral-300'>
+        <Link href='/blog' className={`${fonts.montserrat} font-light block flex flex-row-reverse justify-end gap-2`}>
+          <p className="peer">back</p>
+          <div className='flex flex-row transition peer-hover:-translate-x-1 hover:-translate-x-1 duration-400'>
+            <ArrowLeft/>
+          </div>
+        </Link>
       </nav>
       
-      <MarkdownView
-        markdown={post.content}
-      />
+      <div className={`${fonts.nunito_sans} prose`}>
+        <Markdown
+          remarkPlugins={[remarkGfm]}
+        >
+          {post.content}
+        </Markdown>
+      </div>
     </section>
     
   )

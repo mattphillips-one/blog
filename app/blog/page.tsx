@@ -8,13 +8,13 @@ export default function Blog() {
 
   return (
     <section className='flex flex-col'>
-      <h1 className={`${fonts.nunito_sans} text-xl pb-5`}>BLOG</h1>
+      <h1 className={`${fonts.nunito_sans} text-xl pb-5 border-b-1 border-neutral-300`}>BLOG</h1>
 
       <div className='flex flex-col md:pl-8 divide-y-1 divide-neutral-500 '>
         {posts.map(({ metadata }) => (
           <div key={metadata.title} className='flex flex-row items-baseline gap-10 py-8'>
             <p className={`${fonts.montserrat} text-nowrap`}>{metadata.date}</p>
-            <Link className={`${fonts.nunito_sans} text-xl`}
+            <Link className={`${fonts.nunito_sans} text-xl hover:translate-x-1 transition duration-400`}
               href={`blog/${metadata.slug}`}
             >{metadata.title}</Link>
           </div>

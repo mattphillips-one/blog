@@ -48,7 +48,7 @@ html {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-1;
 }
 
 .prose .anchor:after {
@@ -84,15 +84,15 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-lg text-neutral-800 dark:text-neutral-200;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-4xl font-medium tracking-tight mb-2;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-medium tracking-tight mt-2 mb-2;
 }
 
 .prose h3 {
@@ -100,7 +100,7 @@ html {
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg text-neutral-500 font-medium mb-2;
 }
 
 .prose strong {
@@ -118,8 +118,8 @@ html {
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
 }
+
 
 pre::-webkit-scrollbar {
   display: none;
@@ -147,4 +147,28 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+/* Style the footnotes section. */
+.footnotes {
+    font-size: small;
+    color: #999999;
+    border-top: 1px solid #30363d;
+}
+
+.footnotes h2 {
+    font-size: medium;
+    font-weight: 200;
+    color: #999999;
+}
+
+.footnotes a {
+    font-size: medium;
+}
+
+.footnotes .data-footnote-backref {
+    font-family: monospace;
+    color: #1062cd;
+    text-decoration-line: none;
+    font-size: large;
 }
