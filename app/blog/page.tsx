@@ -12,11 +12,13 @@ export default function Blog() {
 
       <div className='flex flex-col md:pl-8 divide-y-1 divide-neutral-500 '>
         {posts.map(({ metadata }) => (
-          <div key={metadata.title} className='flex flex-row items-baseline gap-10 py-8'>
+          <div key={metadata.title} className='flex flex-row items-baseline gap-10 py-8 group'>
             <p className={`${fonts.montserrat} text-nowrap`}>{metadata.date}</p>
-            <Link className={`${fonts.nunito_sans} text-xl hover:translate-x-1 transition duration-400`}
-              href={`blog/${metadata.slug}`}
-            >{metadata.title}</Link>
+            <div className='group-hover:translate-x-1 duration-400'>
+              <Link className={`${fonts.nunito_sans} text-xl`}
+                href={`blog/${metadata.slug}`}
+              >{metadata.title}</Link>
+            </div>
           </div>
         ))}
       </div>
