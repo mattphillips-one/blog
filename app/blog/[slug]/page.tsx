@@ -15,13 +15,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{slug:s
   }
 
   return (
-    <section className='px-0 lg: px-9'>
+    <section className='px-0 lg:px-9'>
       <nav className='mb-4 text-neutral-600 dark:text-neutral-300 group inline-block'>
         <Link href='/blog' className={`${fonts.montserrat} font-light flex gap-2`}>
           <div className='transition group-hover:-translate-x-1 duration-400'>
             <ArrowLeft/>
           </div>
-          <p>back</p>
+          <p className='group-hover:underline'>back</p>
         </Link>
       </nav>
       

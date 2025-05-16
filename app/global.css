@@ -100,7 +100,7 @@ html {
 }
 
 .prose h4 {
-  @apply text-lg text-neutral-500 font-medium mb-2;
+  @apply text-lg text-neutral-500 font-medium mb-2 dark:text-neutral-200;
 }
 
 .prose strong {
