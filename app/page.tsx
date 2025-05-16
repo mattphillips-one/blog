@@ -2,6 +2,7 @@ import Header from 'app/components/Header';
 import Projects from 'app/components/Projects';
 import Contact from 'app/components/Contact';
 import { cousine, roboto, nunito_sans } from 'app/components/ui/fonts';
+import Footer from './components/footer';
 
 export default function Page() {
   return (
@@ -12,6 +13,8 @@ export default function Page() {
       <Projects />
 
       <Contact />
+
+      <Footer />
     </section>
   );
 }

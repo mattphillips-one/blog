@@ -103,5 +103,6 @@ export const fonts = {
   montserrat_body: `${montserrat.className} font-light text-base/7 tracking-wide`,
   roboto_body: `${roboto.className} font-light text-sm/6`,
   lato_body: `${lato.className} font-light text-lg`,
-  section_header: `${roboto.className} text-2xl font-base dark:text-stone-50 text-right mr-6 md:mr-10 mt-3 mb-6 tracking-tight`
+  section_header: `${roboto.className} text-2xl font-base dark:text-stone-50 text-right mr-6 md:mr-10 mt-3 mb-6 tracking-tight`,
+  header_text: `${nunito_sans.className} text-3xl tracking-wide`
 }

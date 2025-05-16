@@ -5,7 +5,6 @@ import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
 
 const baseURL = 'https://mattphillips.space'
 
@@ -58,7 +57,6 @@ export default function RootLayout({
         <main className="flex-auto justify-start min-w-0 mt-6 flex flex-col px-2 max-w-6xl mx-4 mt-8 lg:mx-auto">
           <Navbar />
           {children}
-          <Footer />
           <Analytics />
           <SpeedInsights />
         </main>

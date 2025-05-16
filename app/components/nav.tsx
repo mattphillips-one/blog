@@ -13,8 +13,11 @@ const navItems = {
   '/#projects': {
     name: 'projects'
   },
-  '#contact': {
+  '/#contact': {
     name: 'contact'
+  },
+  '/blog': {
+    name: 'blog'
   }
 }
 
@@ -30,8 +33,8 @@ export function Navbar() {
   }
 
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight flex justify-between">
-      <div className="px-2 lg:sticky lg:top-20">
+    <aside className="-ml-[8px] mb-10 tracking-tight flex justify-between">
+      <div className="lg:sticky lg:top-20">
         <nav
           className="flex flex-row items-baseline relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
@@ -42,7 +45,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:underline hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="transition-all hover:text-neutral-600 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}
                 </Link>
@@ -79,10 +82,12 @@ const SideMenu = ({ref, closeMenu}) => {
           alt=''
         />
       </div>
-      <ul className={`flex flex-col gap-5 mt-10 ${fonts.montserrat}`}>
-        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#top">Home</a></li>
-        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#projects">Projects</a></li>
-        <li><a className={`font-normal text-lg`} onClick={closeMenu} href="#contact">Contact</a></li>
+      <ul className={`flex flex-col gap-5 mt-8 ${fonts.montserrat}`}>
+        {Object.entries(navItems).map(([path, { name }]) => {
+          return (
+            <li key={path}><a className={`font-normal text-lg`} onClick={closeMenu} href={path}>{name}</a></li>
+          )
+        })}
       </ul>
     </div>
   );
