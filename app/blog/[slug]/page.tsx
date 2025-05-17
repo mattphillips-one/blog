@@ -5,8 +5,26 @@ import ArrowLeft from "app/components/ui/arrow-left";
 import { fonts } from "app/components/ui/fonts";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
-export default async function BlogPostPage({ params }: { params: Promise<{slug:string}>}) {
+type Props = {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPosts().find((post) => post.metadata.slug === slug);
+
+  if (!post) {
+    return {};
+  }
+
+  return {
+    title: `Blog | ${post.metadata.title}`
+  }
+}
+
+export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPosts().find((post) => post.metadata.slug === slug);
 
