@@ -21,7 +21,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{slug:s
           <div className='transition group-hover:-translate-x-1 duration-400'>
             <ArrowLeft/>
           </div>
-          <p className='group-hover:underline'>back</p>
+          <p>back</p>
         </Link>
       </nav>
       
