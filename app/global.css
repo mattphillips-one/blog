@@ -166,6 +166,10 @@ table {
     font-size: medium;
 }
 
+.footnotes p {
+    font-size: medium;
+}
+
 .footnotes .data-footnote-backref {
     font-family: monospace;
     color: #1062cd;
